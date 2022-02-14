@@ -1,0 +1,23 @@
+{
+  "name": "cms_tech_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaclark369/CMS_Tech_Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaclark369/CMS_Tech_Blog/issues"
+  },
+  "homepage": "https://github.com/zaclark369/CMS_Tech_Blog#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.2"
+  }
+}
