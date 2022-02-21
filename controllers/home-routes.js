@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequalize = require('../config/connection');
-const { Post,User, Comment, Vote } = require('../models');
+const { Post, User, Comment } = require('../models');
 
 
 
@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
         posts = posts.map(post => post.get({ plain: true}));
 
-        res.sender('homepage', {posts, loggedIn: req.session.loggedIn, singlePost: true})
+        res.render('homepage', {posts, loggedIn: req.session.loggedIn, singlePost: true})
         
     } catch (err) {
         console.log(err);
